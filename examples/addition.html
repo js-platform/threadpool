@@ -1,0 +1,26 @@
+<html>
+<head><title>job.js examples: addition</title></head>
+<script type="application/javascript" src="../lib/job.js"></script>
+<script type="application/javascript;version=1.6">
+
+function add( a, b ) {
+    console.log( 'adding ' + a + ' and ' + b );
+    return a + b;
+};
+
+function go() {
+    var pool = new job.Pool();
+    pool.dispatch( 
+        add,
+        [1, 2], 
+        function( result ) {
+            console.log( result )
+        }
+    );
+};
+
+</script>
+<body onload="go()">
+</pre>
+</body>
+</html>
