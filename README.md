@@ -1,6 +1,6 @@
-# job.js
+# job
 
-job.js provides pooling with web workers with a simple API to make web workers less scary to use.
+Provides pooling with web workers with a simple API to make web workers less scary to use.
 
 With job.js, you can create a pool of web workers that you can accept work and run a callback when the work finishes:
 
